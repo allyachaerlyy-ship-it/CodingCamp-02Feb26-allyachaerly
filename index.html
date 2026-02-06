@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My To-Do List</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="card header">
+      <h1>My To-Do List</h1>
+      <p>Atur tugas harianmu dengan lebih rapi dan menyenangkan 💗</p>
+    </div>
+
+    <!-- FORM INPUT -->
+    <div class="card">
+      <label>Nama Tugas</label>
+      <input type="text" id="taskInput" placeholder="Contoh: Belajar JavaScript">
+
+      <label>Tanggal</label>
+      <input type="date" id="dateInput">
+
+      <label>Waktu</label>
+      <input type="time" id="timeInput">
+
+      <button class="btn" id="addTaskBtn">+ Tambah Tugas</button>
+    </div>
+
+    <!-- FILTER -->
+    <div class="card">
+      <h3>Filter Tugas</h3>
+      <div class="filter">
+  <button class="filter-btn active" data-filter="all">Semua</button>
+  <button class="filter-btn" data-filter="pending">Belum Selesai</button>
+  <button class="filter-btn" data-filter="completed">Selesai</button>
+</div>
+    </div>
+
+    <!-- LIST -->
+    <div class="card">
+      <h3>Daftar Tugas</h3>
+      <div class="task-empty">
+        Belum ada tugas yang ditampilkan 🌸
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
